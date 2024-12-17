@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Put the theme name you want the animation made from
-NAME=pixels
+NAME=
 
 THEME_PATH="/usr/share/plymouth/themes/$NAME/"
 
@@ -13,7 +13,7 @@ RESOLUTION=$(xrandr | grep '*' | awk '{print $1}')
 SCREEN_WIDTH=$(echo $RESOLUTION | cut -d'x' -f1)
 SCREEN_HEIGHT=$(echo $RESOLUTION | cut -d'x' -f2)
 
-# Extract x from the pixels.script file
+# Extract x from the .script file
 x=$(cat "$NAME.script" | grep SetImage | awk '{print $3}')
 x=${x:0:1}
 
