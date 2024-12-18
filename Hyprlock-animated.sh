@@ -6,7 +6,7 @@ FILE_NAME=output.webm
 
 # Path to your file
 #Also default path to the utils directory since that's where the file generates
-FILE_PATH="${XDG_CONFIG_HOME:-$HOME/.config}/Hyprlock-animated/utils/$FILE_NAME"
+FILE_PATH="${XDG_CONFIG_HOME:-$HOME/.config}/Hyprland-animated-lock/utils/$FILE_NAME"
 
 # Function to start mpv on each monitor
 start_mpv_on_all_monitors() {
