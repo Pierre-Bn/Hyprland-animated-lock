@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Put the theme name you want the animation made from
-NAME=pixels
+NAME=
 
 THEME_PATH="/usr/share/plymouth/themes/$NAME/"
 
