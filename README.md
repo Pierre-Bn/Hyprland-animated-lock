@@ -10,4 +10,15 @@ To use your own animation, modify the path in **Hyprlock-animated.sh** to point 
 
 ### Hyprlock Configuration
 
-For **Hyprlock** to work properly, you **must** remove any background from your **hyprlock** configuration. A working file (**hyprlock.conf**) is provided in the `utils` folder if you don't feel like making it yourself. 
+For **Hyprlock-animated** to work properly, you **must** remove any background from your **hyprlock** configuration. A working file (**hyprlock.conf**) is provided in the `utils` folder if you don't feel like making it yourself. 
+
+### Hyprland Configuration
+
+Hyprland 0.50.0 added a security feature in commit [01971cb6c7b7607329314645bf46e83d985eafeb](https://github.com/hyprwm/Hyprland/pull/10865) disabling rendering of workspaces when the session is locked by default. 
+**Hyprlock-animated** requires this change to be bypassed : this can be done by adding
+```
+misc = {
+        session_lock_xray = true
+}
+```
+to your **hyprland.conf** (not **hyprlock.conf**!) file.
